@@ -187,11 +187,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
-			"value" : "/opt/homebrew/opt/llvm/bin/clang++"
+			"type" : "UNINITIALIZED",
+			"value" : "clang++"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -951,7 +951,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "tetrisgame"
+			"value" : "newtet"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1248,6 +1248,42 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "/usr/sbin/sysctl"
+		},
+		{
+			"name" : "newtet_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug"
+		},
+		{
+			"name" : "newtet_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "newtet_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame"
 		},
 		{
 			"name" : "tetrisgame_BINARY_DIR",

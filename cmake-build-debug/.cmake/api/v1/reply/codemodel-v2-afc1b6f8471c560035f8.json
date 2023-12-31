@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "tetrisgame",
+					"name" : "newtet",
 					"targetIndexes" : 
 					[
 						0
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "tetrisgame::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-tetrisgame-Debug-53f8b24514107e5f567f.json",
+					"jsonFile" : "target-tetrisgame-Debug-d20de15af186d85424e5.json",
 					"name" : "tetrisgame",
 					"projectIndex" : 0
 				}
