@@ -1,0 +1,3 @@
+/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/CMakeFiles/tetrisgame.dir
+/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/CMakeFiles/rebuild_cache.dir
