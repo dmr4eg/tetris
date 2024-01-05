@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <vector>
 #include <thread>
 #include <chrono>
 #include <ncurses.h>
@@ -11,62 +12,47 @@ const int boardWidth = 10;
 const int boardHeight = 20;
 bool gameOver = false;
 int score = 0;
-int board[boardHeight][boardWidth] = {0};
 
-struct Tetromino {
+class Block {
+public:
     int x, y;
-    int shape[4][4];
+    vector<vector<int>> shape;
+
+    Block(int startX, int startY, const vector<vector<int>> &blockShape)
+            : x(startX), y(startY), shape(blockShape) {}
+
+    Block(const Block &other)
+            : x(other.x), y(other.y), shape(other.shape) {}
+
+    static vector<vector<int>> generateBlockForm(int blockType) {
+        vector<vector<vector<int>>> blockForms = {
+                {{1, 1, 1, 1}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}},
+                {{1, 1, 1, 0}, {1, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}},
+                {{1, 1, 1, 0}, {0, 0, 1, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}},
+                {{1, 1, 0, 0}, {1, 1, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}},
+                {{0, 1, 1, 0}, {1, 1, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}},
+                {{1, 1, 0, 0}, {0, 1, 1, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}},
+                {{1, 0, 0, 0}, {1, 0, 0, 0}, {1, 0, 0, 0}, {1, 0, 0, 0}}
+        };
+        return blockForms[blockType];
+    }
 };
 
-Tetromino generateRandomTetromino() {
-    Tetromino piece;
-    piece.x = boardWidth / 2 - 1;
-    piece.y = 0;
-    static int tetrominoTypes[7][4][4] = {
-            { {1, 1, 1, 1}, // I
-                    {0, 0, 0, 0},
-                    {0, 0, 0, 0},
-                    {0, 0, 0, 0} },
-            { {1, 1, 1, 0}, // J
-                    {1, 0, 0, 0},
-                    {0, 0, 0, 0},
-                    {0, 0, 0, 0} },
-            { {1, 1, 1, 0}, // L
-                    {0, 0, 1, 0},
-                    {0, 0, 0, 0},
-                    {0, 0, 0, 0} },
-            { {1, 1, 0, 0}, // O
-                    {1, 1, 0, 0},
-                    {0, 0, 0, 0},
-                    {0, 0, 0, 0} },
-            { {0, 1, 1, 0}, // S
-                    {1, 1, 0, 0},
-                    {0, 0, 0, 0},
-                    {0, 0, 0, 0} },
-            { {1, 1, 0, 0}, // T
-                    {0, 1, 1, 0},
-                    {0, 0, 0, 0},
-                    {0, 0, 0, 0} },
-            { {1, 1, 0, 0}, // Z
-                    {0, 1, 1, 0},
-                    {0, 0, 0, 0},
-                    {0, 0, 0, 0} }
-    };
-    int type = rand() % 7;
-    for (int i = 0; i < 4; ++i)
-        for (int j = 0; j < 4; ++j)
-            piece.shape[i][j] = tetrominoTypes[type][i][j];
-    return piece;
+vector<vector<int>> board(boardHeight, vector<int>(boardWidth, 0));
+Block currentPiece(0, 0, vector<vector<int>>(4, vector<int>(4, 0)));
+
+int generateRandomBlockType() {
+    return rand() % 7;
 }
 
-void drawBoard(const Tetromino& piece) {
+void drawBoard(const Block &piece) {
     clear();
     for (int i = 0; i < boardHeight; ++i) {
         for (int j = 0; j < boardWidth; ++j) {
             if (board[i][j] == 0)
                 printw(". ");
             else
-                printw("##");
+                printw("XX");
         }
         printw("\n");
     }
@@ -77,18 +63,17 @@ void drawBoard(const Tetromino& piece) {
                 int y = piece.y + i;
 
                 if (y >= 0) {
-                    mvprintw(y, x * 2, "##");
+                    mvprintw(y, x * 2, "XX");
                 }
             }
         }
     }
-
     refresh();
-//    printw("Score: %d\n", score);
+    printw("Score: %d\n", score);
     printw("\n");
 }
 
-bool isValidMove(const Tetromino& piece, int xOffset, int yOffset) {
+bool isValidMove(const Block &piece, int xOffset, int yOffset) {
     for (int i = 0; i < 4; ++i) {
         for (int j = 0; j < 4; ++j) {
             if (piece.shape[i][j] != 0) {
@@ -104,7 +89,7 @@ bool isValidMove(const Tetromino& piece, int xOffset, int yOffset) {
     return true;
 }
 
-void mergePiece(const Tetromino& piece) {
+void mergePiece(const Block &piece) {
     for (int i = 0; i < 4; ++i) {
         for (int j = 0; j < 4; ++j) {
             if (piece.shape[i][j] != 0) {
@@ -140,14 +125,16 @@ void clearLines() {
     }
 }
 
-int main() {
-    srand(time(0));
-    initscr();
-    keypad(stdscr, TRUE);
+void setNoBlockMode() {
+    timeout(0);
     nodelay(stdscr, TRUE);
+    keypad(stdscr, TRUE);
+    halfdelay(1);
+}
 
-    Tetromino currentPiece = generateRandomTetromino();
-    Tetromino nextPiece = generateRandomTetromino();
+void drawLoop() {
+    currentPiece = Block(boardWidth / 2 - 1, 0, Block::generateBlockForm(generateRandomBlockType()));
+    Block nextPiece = Block(boardWidth / 2 - 1, 0, Block::generateBlockForm(generateRandomBlockType()));
     while (!gameOver) {
         drawBoard(currentPiece);
         if (isValidMove(currentPiece, 0, 1)) {
@@ -156,12 +143,19 @@ int main() {
             mergePiece(currentPiece);
             clearLines();
             currentPiece = nextPiece;
-            nextPiece = generateRandomTetromino();
+            nextPiece = Block(boardWidth / 2 - 1, 0, Block::generateBlockForm(generateRandomBlockType()));
             if (!isValidMove(currentPiece, 0, 0)) {
                 gameOver = true;
             }
         }
-        int key = getch();
+        std::this_thread::sleep_for(std::chrono::milliseconds(1200));
+    }
+}
+
+void inputLoop() {
+    int key;
+    while (!gameOver) {
+        key = getch();
         if (key != ERR) {
             switch (key) {
                 case 'a':
@@ -173,7 +167,7 @@ int main() {
                         currentPiece.x++;
                     break;
                 case 's':
-                    if (isValidMove(currentPiece, 0, 1))
+                    if (isValidMove(currentPiece, 0, 3))
                         currentPiece.y++;
                     break;
                 case 'q':
@@ -181,9 +175,33 @@ int main() {
                     break;
             }
         }
-        std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+        this_thread::sleep_for(chrono::milliseconds(100));
     }
+}
+
+void timeLoop() {
+    int counter = 0;
+    while (!gameOver) {
+        this_thread::sleep_for(chrono::seconds(1));
+        counter++;
+    }
+}
+
+int main() {
+    srand(time(0));
+    initscr();
+    setNoBlockMode();
+
+    thread drawThread(drawLoop);
+    thread inputThread(inputLoop);
+    thread timeThread(timeLoop);
+
+    drawThread.join();
+    inputThread.join();
+    timeThread.join();
+
     endwin();
+
     cout << "Game Over! Your score: " << score << endl;
     return 0;
 }
