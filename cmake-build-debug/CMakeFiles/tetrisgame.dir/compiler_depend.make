@@ -822,13 +822,13 @@ CMakeFiles/tetrisgame.dir/main.cpp.o: /Users/dmr4eg/Folders/Codes/portfolio/tetr
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/_types/_nl_item.h \
   /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__locale_dir/locale_base_api/bsd_locale_defaults.h \
   /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/cstdarg \
-  /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/thread \
-  /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__thread/formatter.h \
-  /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__format/concepts.h \
+  /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/vector \
+  /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__format/formatter.h \
   /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__format/format_fwd.h \
+  /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__format/formatter_bool.h \
+  /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__format/concepts.h \
   /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__format/format_parse_context.h \
   /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__format/format_error.h \
-  /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__format/formatter.h \
   /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__format/formatter_integral.h \
   /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__charconv/to_chars_integral.h \
   /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__charconv/tables.h \
@@ -846,6 +846,10 @@ CMakeFiles/tetrisgame.dir/main.cpp.o: /Users/dmr4eg/Folders/Codes/portfolio/tetr
   /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__format/extended_grapheme_cluster_table.h \
   /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__format/width_estimation_table.h \
   /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/array \
+  /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__memory/temp_value.h \
+  /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__split_buffer \
+  /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/thread \
+  /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__thread/formatter.h \
   /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__thread/this_thread.h \
   /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__thread/thread.h \
   /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/sstream \
@@ -881,10 +885,6 @@ CMakeFiles/tetrisgame.dir/main.cpp.o: /Users/dmr4eg/Folders/Codes/portfolio/tetr
   /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__iterator/ranges_iterator_traits.h \
   /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__node_handle \
   /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/optional \
-  /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/vector \
-  /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__format/formatter_bool.h \
-  /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__memory/temp_value.h \
-  /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__split_buffer \
   /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__functional/compose.h \
   /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__functional/default_searcher.h \
   /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__functional/function.h \
@@ -898,32 +898,8 @@ CMakeFiles/tetrisgame.dir/main.cpp.o: /Users/dmr4eg/Folders/Codes/portfolio/tetr
   /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__functional/unary_negate.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/curses.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/ncurses_dll.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/unctrl.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/termios.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/termios.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_posix_vdisable.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/ttycom.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/ioccom.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/ttydefaults.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/unistd.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/unistd.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/select.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_select.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_uuid_t.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/gethostuuid.h
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/unctrl.h
 
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/gethostuuid.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_select.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/select.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/unistd.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/ttydefaults.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_posix_vdisable.h:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/unctrl.h:
 
@@ -940,10 +916,6 @@ CMakeFiles/tetrisgame.dir/main.cpp.o: /Users/dmr4eg/Folders/Codes/portfolio/tetr
 /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__memory/builtin_new_allocator.h:
 
 /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__functional/default_searcher.h:
-
-/opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__format/formatter_bool.h:
-
-/opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/vector:
 
 /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/optional:
 
@@ -983,6 +955,10 @@ CMakeFiles/tetrisgame.dir/main.cpp.o: /Users/dmr4eg/Folders/Codes/portfolio/tetr
 
 /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__thread/this_thread.h:
 
+/opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__thread/formatter.h:
+
+/opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/thread:
+
 /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__format/width_estimation_table.h:
 
 /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__format/unicode.h:
@@ -1009,13 +985,13 @@ CMakeFiles/tetrisgame.dir/main.cpp.o: /Users/dmr4eg/Folders/Codes/portfolio/tetr
 
 /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__format/format_parse_context.h:
 
-/opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__format/format_fwd.h:
-
 /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__format/concepts.h:
 
-/opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__thread/formatter.h:
+/opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__format/formatter_bool.h:
 
-/opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/thread:
+/opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__format/format_fwd.h:
+
+/opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/vector:
 
 /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__type_traits/make_32_64_or_128_bit.h:
 
@@ -1146,8 +1122,6 @@ CMakeFiles/tetrisgame.dir/main.cpp.o: /Users/dmr4eg/Folders/Codes/portfolio/tetr
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_blksize_t.h:
 
 /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__algorithm/ranges_unique.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/unistd.h:
 
 /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__algorithm/ranges_move.h:
 
@@ -1877,8 +1851,6 @@ CMakeFiles/tetrisgame.dir/main.cpp.o: /Users/dmr4eg/Folders/Codes/portfolio/tetr
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_int16_t.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/ttycom.h:
-
 /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__type_traits/is_trivially_move_constructible.h:
 
 /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__tuple/make_tuple_types.h:
@@ -2483,8 +2455,6 @@ CMakeFiles/tetrisgame.dir/main.cpp.o: /Users/dmr4eg/Folders/Codes/portfolio/tetr
 
 /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__algorithm/iter_swap.h:
 
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/termios.h:
-
 /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__type_traits/strip_signature.h:
 
 /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__type_traits/is_copy_constructible.h:
@@ -2504,8 +2474,6 @@ CMakeFiles/tetrisgame.dir/main.cpp.o: /Users/dmr4eg/Folders/Codes/portfolio/tetr
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/arm/types.h:
 
 /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__algorithm/ranges_sort.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/ioccom.h:
 
 /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__type_traits/apply_cv.h:
 
@@ -2542,8 +2510,6 @@ CMakeFiles/tetrisgame.dir/main.cpp.o: /Users/dmr4eg/Folders/Codes/portfolio/tetr
 /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__utility/forward.h:
 
 /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__type_traits/copy_cvref.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/_types/_uuid_t.h:
 
 /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__algorithm/ranges_max_element.h:
 
@@ -2690,8 +2656,6 @@ CMakeFiles/tetrisgame.dir/main.cpp.o: /Users/dmr4eg/Folders/Codes/portfolio/tetr
 /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__memory/addressof.h:
 
 /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/__memory/shared_ptr.h:
-
-/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/termios.h:
 
 /opt/homebrew/Cellar/llvm/17.0.3/include/c++/v1/functional:
 

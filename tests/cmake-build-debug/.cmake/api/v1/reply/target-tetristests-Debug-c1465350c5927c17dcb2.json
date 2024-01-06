@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "tetrisgame"
+			"path" : "tetristests"
 		}
 	],
 	"backtrace" : 1,
@@ -25,13 +25,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 32,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 8,
+				"line" : 35,
 				"parent" : 0
 			}
 		]
@@ -60,7 +60,7 @@
 			]
 		}
 	],
-	"id" : "tetrisgame::@6890427a1f51a3e7e1df",
+	"id" : "tetristests::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -75,14 +75,29 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-lncurses",
+				"fragment" : "-lgtest",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-lgtest_main",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-ltetrisgame_lib",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "tetrisgame",
-	"nameOnDisk" : "tetrisgame",
+	"name" : "tetristests",
+	"nameOnDisk" : "tetristests",
 	"paths" : 
 	{
 		"build" : ".",
@@ -103,7 +118,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
+			"path" : "tetristest.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

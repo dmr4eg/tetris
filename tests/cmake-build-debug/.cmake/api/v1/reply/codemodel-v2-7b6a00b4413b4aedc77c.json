@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "newtet",
+					"name" : "tetristests",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "tetrisgame::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-tetrisgame-Debug-d20de15af186d85424e5.json",
-					"name" : "tetrisgame",
+					"id" : "tetristests::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tetristests-Debug-c1465350c5927c17dcb2.json",
+					"name" : "tetristests",
 					"projectIndex" : 0
 				}
 			]
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug",
-		"source" : "/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame"
+		"build" : "/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/tests/cmake-build-debug",
+		"source" : "/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/tests"
 	},
 	"version" : 
 	{

@@ -1,0 +1,13 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=make -DCMAKE_CXX_COMPILER=clang++ -G "CodeBlocks - Unix Makefiles" -S /Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/tests -B /Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/tests/cmake-build-debug
+-- Configuring done (0.0s)
+CMake Error at CMakeLists.txt:23 (add_library):
+  Cannot find source file:
+
+    tetrisgame/main.cpp
+
+
+CMake Error at CMakeLists.txt:23 (add_library):
+  No SOURCES given to target: tetrisgame_lib
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.

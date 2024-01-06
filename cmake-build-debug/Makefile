@@ -129,6 +129,32 @@ tetrisgame/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetrisgame.dir/build.make CMakeFiles/tetrisgame.dir/build
 .PHONY : tetrisgame/fast
 
+#=============================================================================
+# Target rules for targets named tetristests
+
+# Build rule for target.
+tetristests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tetristests
+.PHONY : tetristests
+
+# fast build rule for target.
+tetristests/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tetristests.dir/build.make tests/CMakeFiles/tetristests.dir/build
+.PHONY : tetristests/fast
+
+#=============================================================================
+# Target rules for targets named tetrisgame_lib
+
+# Build rule for target.
+tetrisgame_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tetrisgame_lib
+.PHONY : tetrisgame_lib
+
+# fast build rule for target.
+tetrisgame_lib/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/tetrisgame_lib.dir/build.make tests/CMakeFiles/tetrisgame_lib.dir/build
+.PHONY : tetrisgame_lib/fast
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +188,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... tetrisgame"
+	@echo "... tetrisgame_lib"
+	@echo "... tetristests"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

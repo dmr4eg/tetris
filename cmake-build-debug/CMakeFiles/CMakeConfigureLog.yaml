@@ -275,3 +275,42 @@ events:
       
       
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/homebrew/lib/cmake/GTest/GTestConfig.cmake:29 (find_dependency)"
+      - "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/FindGTest.cmake:194 (find_package)"
+      - "tests/CMakeLists.txt:11 (find_package)"
+    directories:
+      source: "/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-TE172Y"
+      binary: "/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-TE172Y"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: /Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-TE172Y
+        
+        Run Build Command(s):/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E env VERBOSE=1 make -f Makefile cmTC_c845a/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_c845a.dir/build.make CMakeFiles/cmTC_c845a.dir/build
+        Building C object CMakeFiles/cmTC_c845a.dir/src.c.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics -MD -MT CMakeFiles/cmTC_c845a.dir/src.c.o -MF CMakeFiles/cmTC_c845a.dir/src.c.o.d -o CMakeFiles/cmTC_c845a.dir/src.c.o -c /Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-TE172Y/src.c
+        Linking C executable cmTC_c845a
+        /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c845a.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/opt/homebrew/opt/llvm/lib  CMakeFiles/cmTC_c845a.dir/src.c.o -o cmTC_c845a 
+        
+      exitCode: 0
+...

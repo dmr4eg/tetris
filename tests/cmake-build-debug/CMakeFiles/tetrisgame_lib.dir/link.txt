@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libtetrisgame_lib.a CMakeFiles/tetrisgame_lib.dir/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/main.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libtetrisgame_lib.a

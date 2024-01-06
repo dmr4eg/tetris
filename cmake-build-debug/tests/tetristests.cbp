@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="tetristests"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="clang"/>
+		<Option virtualFolders="CMake Files\;CMake Files\tests\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\opt\;CMake Files\..\..\..\..\..\..\..\opt\homebrew\;CMake Files\..\..\..\..\..\..\..\opt\homebrew\lib\;CMake Files\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\;CMake Files\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\GTest\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="make -j8 -f &quot;/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="make -j8 -f &quot;/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make -j8 -f &quot;/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make -j8 -f &quot;/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tetristests">
+				<Option output="/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests/tetristests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/opt/homebrew/include"/>
+					<Add directory="/opt/homebrew/opt/llvm/bin/../include/c++/v1"/>
+					<Add directory="/opt/homebrew/Cellar/llvm/17.0.3/lib/clang/17/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/System/Library/Frameworks"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="make -j8 -f &quot;/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 tetristests"/>
+					<CompileFile command="make -j8 -f &quot;/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make -j8 -f &quot;/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make -j8 -f &quot;/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tetristests/fast">
+				<Option output="/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests/tetristests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/opt/homebrew/include"/>
+					<Add directory="/opt/homebrew/opt/llvm/bin/../include/c++/v1"/>
+					<Add directory="/opt/homebrew/Cellar/llvm/17.0.3/lib/clang/17/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/System/Library/Frameworks"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="make -j8 -f &quot;/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 tetristests/fast"/>
+					<CompileFile command="make -j8 -f &quot;/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make -j8 -f &quot;/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make -j8 -f &quot;/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tetrisgame_lib">
+				<Option output="/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests/libtetrisgame_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/opt/homebrew/opt/llvm/bin/../include/c++/v1"/>
+					<Add directory="/opt/homebrew/Cellar/llvm/17.0.3/lib/clang/17/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/System/Library/Frameworks"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="make -j8 -f &quot;/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 tetrisgame_lib"/>
+					<CompileFile command="make -j8 -f &quot;/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make -j8 -f &quot;/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make -j8 -f &quot;/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tetrisgame_lib/fast">
+				<Option output="/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests/libtetrisgame_lib.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/opt/homebrew/opt/llvm/bin/../include/c++/v1"/>
+					<Add directory="/opt/homebrew/Cellar/llvm/17.0.3/lib/clang/17/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/System/Library/Frameworks"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="make -j8 -f &quot;/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 tetrisgame_lib/fast"/>
+					<CompileFile command="make -j8 -f &quot;/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make -j8 -f &quot;/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make -j8 -f &quot;/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/main.cpp">
+			<Option target="tetrisgame_lib"/>
+		</Unit>
+		<Unit filename="/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/tests/tetristest.cpp">
+			<Option target="tetristests"/>
+		</Unit>
+		<Unit filename="/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/tests/tetristest.h">
+			<Option target="tetristests"/>
+		</Unit>
+		<Unit filename="/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\tests\"/>
+		</Unit>
+		<Unit filename="/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/../../../../../../../opt/homebrew/lib/cmake/GTest/GTestConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\GTest\"/>
+		</Unit>
+		<Unit filename="/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/../../../../../../../opt/homebrew/lib/cmake/GTest/GTestConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\GTest\"/>
+		</Unit>
+		<Unit filename="/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/../../../../../../../opt/homebrew/lib/cmake/GTest/GTestTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\GTest\"/>
+		</Unit>
+		<Unit filename="/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/../../../../../../../opt/homebrew/lib/cmake/GTest/GTestTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\opt\homebrew\lib\cmake\GTest\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

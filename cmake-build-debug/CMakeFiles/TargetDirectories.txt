@@ -1,3 +1,7 @@
 /Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/CMakeFiles/tetrisgame.dir
 /Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests/CMakeFiles/tetristests.dir
+/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests/CMakeFiles/tetrisgame_lib.dir
+/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests/CMakeFiles/edit_cache.dir
+/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/cmake-build-debug/tests/CMakeFiles/rebuild_cache.dir

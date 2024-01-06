@@ -1,0 +1,1 @@
+set(  tetristests_TESTS)
