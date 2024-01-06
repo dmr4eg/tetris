@@ -83,14 +83,14 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "tetrisgame_lib::@a44f0ac069e85531cdee",
-					"jsonFile" : "target-tetrisgame_lib-Debug-9c72e6a3126d6346a116.json",
+					"jsonFile" : "target-tetrisgame_lib-Debug-cd8d6e475f5f8c59ce8b.json",
 					"name" : "tetrisgame_lib",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "tetristests::@a44f0ac069e85531cdee",
-					"jsonFile" : "target-tetristests-Debug-fbcc8f827fbf9cb49692.json",
+					"jsonFile" : "target-tetristests-Debug-bb8d92f9b16a86488b82.json",
 					"name" : "tetristests",
 					"projectIndex" : 1
 				}

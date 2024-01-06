@@ -13,6 +13,7 @@ const int boardHeight = 20;
 bool gameOver = false;
 int score = 0;
 
+// Trida Block, ktera reprezentuje jednotlive kostky
 class Block {
 public:
     int x, y;
@@ -24,6 +25,7 @@ public:
     Block(const Block &other)
             : x(other.x), y(other.y), shape(other.shape) {}
 
+    // Metoda, ktera vraci vektor vektoru, ktery reprezentuje kostku
     static vector<vector<int>> generateBlockForm(int blockType) {
         vector<vector<vector<int>>> blockForms = {
                 {{1, 1, 1, 1},
@@ -59,15 +61,20 @@ public:
     }
 };
 
+// Vektor vektoru, ktery reprezentuje herni plochu
 vector<vector<int>> board(boardHeight, vector<int>(boardWidth, 0));
+// Promenna, ktera reprezentuje aktualni kostku
 Block currentPiece(0, 0, vector<vector<int>>(4, vector<int>(4, 0)));
 
+// Metoda, ktera generuje nahodny typ kostky
 int generateRandomBlockType() {
     return rand() % 7;
 }
 
+// Metoda, ktera vykresluje herni plochu
 void drawBoard(const Block &piece) {
     clear();
+    // Vykresleni herni plochy.
     for (int i = 0; i < boardHeight; ++i) {
         for (int j = 0; j < boardWidth; ++j) {
             if (board[i][j] == 0)
@@ -77,6 +84,7 @@ void drawBoard(const Block &piece) {
         }
         printw("\n");
     }
+    // Vykresleni aktualni kostky
     for (int i = 0; i < 4; ++i) {
         for (int j = 0; j < 4; ++j) {
             if (piece.shape[i][j] != 0) {
@@ -94,6 +102,7 @@ void drawBoard(const Block &piece) {
     printw("\n");
 }
 
+// Metoda, ktera zjistuje, zda je mozne kostku posunout na pozici x, y
 bool isValidMove(const Block &piece, int xOffset, int yOffset) {
     for (int i = 0; i < 4; ++i) {
         for (int j = 0; j < 4; ++j) {
@@ -110,18 +119,7 @@ bool isValidMove(const Block &piece, int xOffset, int yOffset) {
     return true;
 }
 
-void mergePiece(const Block &piece) {
-    for (int i = 0; i < 4; ++i) {
-        for (int j = 0; j < 4; ++j) {
-            if (piece.shape[i][j] != 0) {
-                int x = piece.x + j;
-                int y = piece.y + i;
-                board[y][x] = 1;
-            }
-        }
-    }
-}
-
+// Metoda, ktera maze plne radky
 void clearLines() {
     for (int i = boardHeight - 1; i >= 0; --i) {
         bool lineFull = true;
@@ -146,6 +144,7 @@ void clearLines() {
     }
 }
 
+// Metoda, ktera nastavuje ncurses knihovnu do noblock modu
 void setNoBlockMode() {
     timeout(0);
     nodelay(stdscr, TRUE);
@@ -153,6 +152,7 @@ void setNoBlockMode() {
     halfdelay(1);
 }
 
+// Metoda, ktera vykresluje herni plochu
 void drawLoop() {
     currentPiece = Block(boardWidth / 2 - 1, 0, Block::generateBlockForm(generateRandomBlockType()));
     Block nextPiece = Block(boardWidth / 2 - 1, 0, Block::generateBlockForm(generateRandomBlockType()));
@@ -161,7 +161,16 @@ void drawLoop() {
         if (isValidMove(currentPiece, 0, 1)) {
             currentPiece.y++;
         } else {
-            mergePiece(currentPiece);
+            // Zkopirovani kostky do herni plochy
+            for (int i = 0; i < 4; ++i) {
+                for (int j = 0; j < 4; ++j) {
+                    if (currentPiece.shape[i][j] != 0) {
+                        int x = currentPiece.x + j;
+                        int y = currentPiece.y + i;
+                        board[y][x] = 1;
+                    }
+                }
+            }
             clearLines();
             currentPiece = nextPiece;
             nextPiece = Block(boardWidth / 2 - 1, 0, Block::generateBlockForm(generateRandomBlockType()));
@@ -169,10 +178,11 @@ void drawLoop() {
                 gameOver = true;
             }
         }
-        std::this_thread::sleep_for(std::chrono::milliseconds(10));
+        std::this_thread::sleep_for(std::chrono::milliseconds(1200));
     }
 }
 
+// Metoda, ktera zpracovava vstup od uzivatele
 void inputLoop() {
     int key;
     while (!gameOver) {
@@ -200,6 +210,7 @@ void inputLoop() {
     }
 }
 
+// Metoda, ktera zpracovava cas
 void timeLoop() {
     int counter = 0;
     while (!gameOver) {

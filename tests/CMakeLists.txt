@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 17)
 find_package(GTest REQUIRED)
 add_executable(tetristests tetristest.cpp)
 
+# Vnoreni knihovny pro testy
 target_include_directories(tetristests PRIVATE ${GTEST_INCLUDE_DIRS})
 
 target_link_libraries(tetristests PRIVATE GTest::GTest GTest::Main pthread ncurses)
