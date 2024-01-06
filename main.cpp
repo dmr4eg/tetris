@@ -5,6 +5,7 @@
 #include <thread>
 #include <chrono>
 #include <ncurses.h>
+#include <cstring>
 
 using namespace std;
 
@@ -219,8 +220,21 @@ void timeLoop() {
     }
 }
 
-int main() {
+
+int main(int argc, char *argv[]) {
     srand(time(0));
+
+    // Check for command-line arguments
+    if (argc > 1 && strcmp(argv[1], "--help") == 0) {
+        cout << "Tetris Game -- Help\n";
+        cout << "Usage: " << argv[0] << " [--help]\n";
+        cout << "Controls:\n";
+        cout << "  - 'a': Move the piece left\n";
+        cout << "  - 'd': Move the piece right\n";
+        cout << "  - 's': Move the piece down\n";
+        cout << "  - 'q': Quit the game\n";
+        return 0;
+    }
     initscr();
     setNoBlockMode();
 

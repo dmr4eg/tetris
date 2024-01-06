@@ -122,9 +122,6 @@
 		<Unit filename="/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/tests/tetristest.cpp">
 			<Option target="tetristests"/>
 		</Unit>
-		<Unit filename="/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/tests/tetristest.h">
-			<Option target="tetristests"/>
-		</Unit>
 		<Unit filename="/Users/dmr4eg/Folders/Codes/portfolio/tetris/tetrisgame/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
